@@ -1,0 +1,7 @@
+{
+  "appId": "com.combatrobotbattles.app",
+  "appName": "Combat Robot Battles",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "android": { "backgroundColor": "#07041a" }
+}

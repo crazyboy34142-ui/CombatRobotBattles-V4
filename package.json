@@ -1,0 +1,17 @@
+{
+  "name": "combat-robot-battles",
+  "version": "4.2.0",
+  "private": true,
+  "description": "195-country robot battle: 3D head-mounted robot POV, projectiles, HP/armour combat (chat call + final robots)",
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "three": "0.160.0"
+  },
+  "scripts": {
+    "postinstall": "node -e \"const fs=require('fs');fs.mkdirSync('www/lib',{recursive:true});fs.copyFileSync('node_modules/three/build/three.module.js','www/lib/three.module.js')\"",
+    "serve": "npx --yes http-server www -p 8080 -c-1",
+    "sync": "npx cap sync android"
+  }
+}
